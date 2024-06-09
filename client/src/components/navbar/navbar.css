@@ -1,0 +1,179 @@
+.navbar{
+    width: 100%;
+    height: 45px;
+    background-color: aliceblue;
+}
+
+.navbarWrapper{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+}
+
+
+.navbarLeft{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+.languages{
+    flex: 1;
+    height: 100%;
+    border: 1px solid #01243b4e;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    color: #01243b;
+}
+.navbarInputContainer{
+    position: relative;
+    flex: 5;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid #01243b4e;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 0 3px #1d9cf0c6;
+}
+.navbarInput{
+    width: 90%;
+    height: 80%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: inherit;
+    font-size: 15px;
+    color: #01243b;
+    font-weight: 500;
+}
+.navbarInput::placeholder{
+    color: #01243b9d;
+    letter-spacing: 1.2px;
+}
+.navbarSearchIcon{
+    position: absolute;
+    right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+.navbarCenter{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarLogo{
+    transform: rotate(-180deg);
+    font-size: 15px;
+    color: #01243b;
+    border: 3px solid #01243b;
+    padding: 3px;
+    border-radius: 50%;
+}
+.navbarLogoTitle{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 3px;
+    color: #01243b;
+    transition: .4s;
+}
+
+
+
+.navbarRight{
+    margin-right: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.navbarCart{
+    position: relative;
+    cursor: pointer;
+    padding: 5px 7px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.navbarCartCount{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    right: -3px;
+    background-color: #1D9BF0;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 10px;
+
+}
+.navbarRight .NavbarRegister , .navbarRight .NavbarSignin{
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: .5s;
+    font-family: Open Sans;
+    font-weight: 600;
+}
+.navbarRight .NavbarRegister:hover , .navbarRight .NavbarSignin:hover{
+    background-color: #1D9BF0;
+    color: aliceblue;
+}
+.navbarCart:hover{
+    background-color: #1D9BF0;
+    color: aliceblue;
+}
+.navbarCart:hover .navbarCartCount{
+    background-color: #01243b;
+    color: aliceblue;
+}
+.navbarLogoTitle:hover{
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 380px ){
+    .languages{
+        display: none;
+    }
+    .navbarInputContainer{
+        width: 120px;
+        margin-right: 15px;
+    }
+    .navbarRght{
+        gap: 4px;
+    }
+    .navbarLogo{
+        font-size: 12px;
+    }
+    .navbarLogoTitle{
+        font-size: 18px;
+    }
+    .navbarRight{
+        justify-content: right;
+        font-size: 11px;
+        gap: 1px;
+    }
+    .navbarRight .NavbarRegister , .navbarRight .NavbarSignin{
+        padding: 2px 4px;
+    }
+    .navbarInput{
+        font-size: 14px;
+    }
+    .navbarSearchIcon{
+        font-size: 14px;
+    }
+}

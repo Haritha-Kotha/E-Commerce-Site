@@ -1,0 +1,124 @@
+.productDetails{
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+}
+.productDetailsLeft{
+    margin: 30px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.productDetailsImg{
+    height: 100%;
+    width: 80%;
+}
+
+
+.productDetailsRight{
+    flex: 1;
+    margin: 30px;
+}
+.productDetailsRightTitle{
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.productDetailsRightDesc{
+    font-weight: 500;
+    color: rgba(0, 17, 28, 0.656);
+    margin-bottom: 20px;
+}
+.productDetailsRightPriceContainer{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 20px;
+}
+.productDetailsRightPriceText{
+    font-weight: 500;
+    font-size: 18px;
+}
+.productDetailsRightPrice{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.productDetailsColorsAndSizes{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 25px;
+}
+.productDetailsColors{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.productDetailsColorText , .productDetailsSizeText{
+    font-weight: 500;
+}
+.productDetailsColor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.productDetailsSizes{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.productDetailsSizeSelect{
+    padding: 6px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 17, 28, 0.404);
+    border-radius: 4px;
+    outline: none;
+    z-index: 3;
+}
+
+.productDetailsCountAndCart{
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+.productDetailsCountContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.productDetailsCount{
+    padding: 4px 8px;
+    border: 2px solid #1d9cf06e;
+    border-radius: 4px;
+}
+.productDetailsCartBtn{
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #1D9BF0;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width : 380px ){
+    .productDetails{
+        flex-direction: column;
+        height: max-content;
+    }
+    .productDetailsRightTitle{
+        font-size: 25px;
+        margin-top: -40px;
+    }
+    .productDetailsRightDesc{
+        font-size: 14px;
+    }
+}

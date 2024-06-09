@@ -1,0 +1,72 @@
+.newsLetter{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c8ce11b;
+    padding: 50px 0;
+    margin: 20px 0;
+}
+.newsLetterTitle{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.newsLetterDesc{
+    font-weight: 500;
+}
+.newsLetterInputcontainer{
+    height: 40px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #1d9cf012;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.newsLetterInput{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+.newLetterBtn{
+    height: 100%;
+    width: 80px;
+    border: none;
+    outline: none;
+    background-color: #1D9BF0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsLetterSendBtn{
+    color: aliceblue;
+    font-size: 22px;
+}
+
+@media screen and (max-width : 380px ){
+    .newsLetterTitle{
+        font-size: 30px;
+    }
+    .newsLetterDesc{
+        text-align: center;
+    }
+    .newsLetterInputcontainer{
+        width: 280px;
+        height: 35px;
+    }
+    .newLetterBtn{
+        width: 60px;
+    }
+    .newsLetterSendBtn{
+        font-size: 16px;
+    }
+}

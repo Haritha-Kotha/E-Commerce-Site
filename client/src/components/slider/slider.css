@@ -1,0 +1,125 @@
+.slider{
+    height:calc(100vh - 75px) ;
+    width: 99.65vw;
+    overflow: hidden;
+}
+.slide{
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+}
+.sliderWrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    transition: all 1.5s ease;
+    transform: translateX(-0vw);
+}
+.slideDesign{
+    position: absolute;
+    left: 65px;
+    top: 50px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background:radial-gradient(#024572,#001624);
+    animation : bounce 10s ease infinite;
+}
+@keyframes bounce {
+   0%{
+    top: 50px;
+   }
+   50%{
+    top:250px;
+   }
+   100%{
+    top:50px;
+   }
+}
+.imgSlide{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left: 90px;
+    top: 90px;
+}
+.slideIcons{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.leftSlideIcon{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 50%;
+    background-color:rgba(0, 0, 0, 0.12);
+}
+.rightSlideIcon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 50%;
+    background-color:rgba(0,0,0,.12);
+}
+.slideInfo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 80px;  
+}
+.slideInfoTitle{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 42px;
+    color: #001624;
+}
+.slideInfoDesc{
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+.slideInfoBtn{
+    padding: 8px 12px;
+    background-color:#1d9bf0;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* responsive */
+@media screen and (max-width : 380px) {
+    .slideDesign{
+        height: 100px;
+        width: 100px;
+    }
+    .imgSlide{
+        top: 50px;
+        height: 300px;
+        width: 320px;
+    }
+    .slideInfoTitle{
+        font-size: 20px;
+    }
+    .slideInfoDesc{
+        font-size: 12px;
+        text-align: center;
+    }
+    .slideInfo{
+        bottom: -200px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

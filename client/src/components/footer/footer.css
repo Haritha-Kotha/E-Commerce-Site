@@ -1,0 +1,110 @@
+.footer{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+}
+.footerLeft{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.footerLeftTitle{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.footerLeftDesc{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footerIcons{
+    display: flex;
+    gap: 20px;
+}
+.footerLeftIcon{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footerLeftIcon.facebook{
+    background-color: rgba(0, 76, 255, 0.813);
+    color: aliceblue;
+}
+.footerLeftIcon.instagram{
+    background-color: rgba(219, 5, 140, 0.841);
+    color: aliceblue;
+}
+.footerLeftIcon.twitter{
+    background-color: #1D9BF0;
+    color: aliceblue;
+}
+.footerLeftIcon.gmail{
+    background-color: green;
+    color: aliceblue;
+}
+
+
+.footerCenter{
+    flex: 1;
+}
+.footerCenterTitle{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footerCenterLinks{
+    padding: 10px 40px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerCenterLinks li{
+    cursor: pointer;
+    margin: 8px;
+    font-weight: 500;
+}
+
+.footerRight{
+    flex: 1;
+}
+.footerRightTitle{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footerContactInfo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.footerContactInfo span{
+    font-size: 14px;
+}
+.footerContactIcon{
+    font-size: 18px;
+}
+
+@media screen and (max-width : 380px ){
+    .footerLeftTitle{
+        font-size: 24px;
+    }
+    .footerLeftDesc{
+        font-size: 14px;
+    }
+    .footerCenter{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footerLeftIcon{
+        font-size: 15px;
+        padding: 10px;
+    }
+}

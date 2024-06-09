@@ -1,0 +1,13 @@
+.categories{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width : 380px) {
+    .categories{
+        width: 99.65vw;
+        height: max-content;
+        flex-direction: column;
+    }
+}

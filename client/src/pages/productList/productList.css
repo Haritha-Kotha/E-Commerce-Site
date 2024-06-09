@@ -1,0 +1,36 @@
+.productListContainer{
+    width: 100%;
+}
+.productListTitle{
+    margin: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.productListSortingContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.filterProducts , .sortProducts{
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.productListSelect{
+    padding: 10px;
+    outline: none;
+    border: 2px solid rgba(0, 25, 42, 0.396);
+    border-radius: 4px;
+    z-index: 3;
+    cursor: pointer;
+}
+.productListSelect.size{
+    margin-left: 10px;
+}
+
+@media screen and (max-width : 380px ){
+    .filterProducts , .sortProducts{
+        display: none;
+    }
+}
